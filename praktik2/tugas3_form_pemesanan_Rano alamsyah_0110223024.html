@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TokoRans</title>
 </head>
-<body style="margin: 0; padding: 0; background-color: white;">
+<body background="burgir.jpg">
 
 <!-- navbar -->
 <header style="background-color: black; padding: 2px;">
@@ -20,7 +20,7 @@
 
 <!-- Content -->
 
-<section style="display: flex; margin-left: 100px; margin-right: 100px; margin-top: 30px;">
+<section style="display: flex; margin-left: 100px; margin-right: 100px; margin-top: 30px; color: white;">
 
 <div style="padding-right: 50px;">
 
@@ -35,33 +35,54 @@
 </div>
 
 <div>
+    <form action="hasil form.html">
 <table style="font-family: sans-serif;"> 
     <tr>
         <td>Pesanan :</td>
-        <td>Burger rans</td>
+        <td>
+            <input type="text" name="Title Here">
+        </td>
     </tr>
     <tr>
         <td>Keterangan:</td>
-        <td>Dagingnya 2
-            pakai saus tomat
-            sayurnya jangan terlalu banyak
+        <td>
+            <textarea name="Description" id="" cols="30" rows="10"></textarea>
         </td>
     </tr>
     <tr>
         <td>Total Harga :</td>
-        <td>100.000</td>
+        <td>
+            <input type="number" name="Total Amount">
+        </td>
     </tr>
     <tr>
         <td>Pembayaran Bank :</td>
-        <td>BRI</td>
+        <td>
+            <select name="bank" id="BRI ">
+                <option value="Pilih Bank">Pilih Bank</option>
+                <option value="BRI">BRI</option>
+                <option value="BCA">BCA</option> <option value="BSI">BSI</option>
+            </select>
+        </td>
     </tr>
     <tr>
         <td>Pemilik Rekening bank :</td>
-        <td>RANO ALAMSYAH</td>
-        </tr>
+        <td>
+            <input type="text" name="namehere">
+        </td>
+    </tr>
     <tr>
         <td>Jumlah Pesanan :</td>
-        <td>5</td>
+        <td>
+            <select name="transaction" id="">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </td>
     </tr>
     <tr>
         <td>
@@ -75,7 +96,7 @@
         <td>
         <input type="checkbox" name="1" value="">Kirim ke Nomer HP</td>
         <td>
-        <input type="checkbox" name="2" value="">Kirim ke Email</td>
+        <input type="checkbox" name="1" value="">Kirim ke Email</td>
     </tr>
     <tr>
         <td><br></td>
@@ -84,19 +105,28 @@
     <tr>
         
         <td>Kirim ke Nomer HP :</td>
-        <td>085772307118</td>
+        <td>
+            <input type="text" name="Mobile Phone">
+        </td>
     </tr> 
     <tr>
         <td>Kirim ke Email :</td>
-        <td>ransyh172cinta@gmail.com</td>
+        <td>
+            <input type="email" name="email">
+        </td>
     </tr>
     <tr>
         <td><br></td>
     </tr>
+    <tr>
+        <td>
+            <input style="background-color: orangered;" type="submit" value="Kirim">
+        </td>
+    </tr> 
 </table>
     </form>
 </div>
 </section>
     <!-- Content End -->
-    </body>
+</body>
 </html>
