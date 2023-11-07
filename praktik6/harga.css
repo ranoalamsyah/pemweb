@@ -1,0 +1,17 @@
+th {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+tr, th, td , table {
+    border: 1px solid lightblue;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 3px 15px;
+}
+
+tr:nth-child(even) {
+    background-color: aliceblue;
+}
