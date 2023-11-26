@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.aqua{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.navajowhite{
+    flex: 4;
+}
+header{
+    background-color: yellow;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 10vh;
+}
+.white{
+    display: flex;
+    flex: 1;
+    height: 80vh;
+}
+article {
+    background-color: white;
+    flex: 4;
+    padding: 10px;
+}
+aside{
+    background-color: aqua;
+    flex: 1;
+    padding: 10px;
+}
+nav{
+    background-color: pink;
+    flex: 1;
+    padding: 10px;
+}
+footer{
+    background-color: yellow;
+    padding: 10px;
+    height: 10vh;
+    box-sizing: border-box;
+
+}
