@@ -15,12 +15,12 @@ header{
     background-color: yellow;
     padding: 10px;
     box-sizing: border-box;
-    height: 10vh;
+    height: 80px;
 }
 .white{
     display: flex;
     flex: 1;
-    height: 80vh;
+    height: 529px;
 }
 article {
     background-color: white;
@@ -40,7 +40,7 @@ nav{
 footer{
     background-color: yellow;
     padding: 10px;
-    height: 10vh;
+    height: 80px;
     box-sizing: border-box;
 
 }
