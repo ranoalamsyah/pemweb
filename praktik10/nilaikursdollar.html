@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Kurs</title>
+
+    <style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Membuat tinggi body sesuai dengan tinggi viewport */
+        margin: 0; /* Menghapus margin default pada body */
+    }
+    
+    fieldset {
+        text-align: center; /* Menengahkan isi fieldset */
+        border-radius: 5px;
+    }
+
+    input {
+        padding: 5px;
+        margin-right: 5px;
+    }
+    
+    button {
+        padding: 5px;
+    }
+
+    </style>
+</head>
+<body>
+<fieldset>
+    <h1>Menghitung Kurs Dollar</h1>
+    <div>
+        <label for="kurs"></label>
+        <div>
+        <input type="number" id="kurs" onchange="hitungKurs()"> $
+        <button onclick="hitungKurs()">Enter</button>
+        </div>
+    </div>
+    <hr>
+    <p>Hasil : <span id="hasilKurs">0</span></p>
+</fieldset>
+
+    
+    <script>
+        function hitungKurs() {
+            // Menangkap elemen inputan
+            let kurs = document.getElementById('kurs').value;
+
+            // Menangkap elemen hasil
+            let hasilKurs = document.getElementById("hasilKurs");
+
+            const nilai = 14.650;
+
+            // Parse nilai kurs ke tipe data numerik sebelum melakukan perhitungan
+            let Kurs = parseFloat(kurs) * nilai;
+
+            // Mempertahankan 3 digit terakhir
+            Kurs = Kurs.toFixed(3);
+
+            console.log("Hasil: " + Kurs);
+
+            // Menampilkan hasil ke halaman
+            hasilKurs.innerHTML = Kurs + "Rupiah"
+        }
+    </script>
+</body>
+</html>

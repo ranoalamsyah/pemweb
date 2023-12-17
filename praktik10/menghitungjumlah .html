@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Kalkulator web</title>
+
+    <style>
+        .angka {
+            max-width: min-content;
+        }
+    </style>
+    </head>
+    <body>
+    <div class="kalkulator">
+        <h1>Penjumlahan</h1>
+        <div class="angka">
+        <input type="number" id="angka1">
+        +
+        <input type="number" id="angka2" onchange="tambahTambahan()">
+        </div>
+        <br>
+        <div class="operator">
+        <button type="button" id="tambah" onclick="tambahTambahan()">+</button>
+        </div>
+        <div class="hasil">
+        <p>Hasil Tambah : <span id="hasil">0</span></p>
+        </div>
+    </div>
+
+    <script src="tambah.js"></script>
+    </body>
+    </html>
