@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: grey;
+        }
+
+        #formContainer {
+            width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: cornflowerblue;
+        }
+
+        label {
+            margin-bottom: 8px;
+        }
+
+        input, button {
+            margin-bottom: 16px;
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .Tombol{
+            background-color: orangered;
+
+        }
+    </style>
+</head>
+<body background="img/libur.jpg">
+    <div id="formContainer">
+        <h2>Form Liburan</h2>
+        <form id="myForm" onsubmit="validateForm(); return false;">
+            <label for="namaPelanggan">Nama Pelanggan:</label>
+            <input type="text" id="namaPelanggan" required maxlength="30">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="jamKeberangkatan">Jam Keberangkatan:</label>
+            <input type="text" id="jamKeberangkatan" required pattern="(?:[01]\d|2[0-3]):(?:[0-5]\d)">
+
+            <label for="tujuanKeberangkatan">Tujuan Keberangkatan:</label>
+            <input type="text" id="tujuanKeberangkatan" required>
+
+            <label for="jumlahTiket">Jumlah Tiket:</label>
+            <input type="number" id="jumlahTiket" required min="1" max="10">
+
+            <button type="submit" class="Tombol">Submit</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+    <script src="form validasi.js"></script>
+
+</body>
+</html>
